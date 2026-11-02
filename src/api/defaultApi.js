@@ -1,9 +1,10 @@
 import axios from 'axios';
+import config from '~/config';
 import { getTokenInCookies } from '~/utils';
 import { ADMIN_USER_ID } from '~/constants'
 
 
-axios.defaults.baseURL = process.env.REACT_APP_API_BASE_URL;
+axios.defaults.baseURL = config.apiBaseUrl;
 axios.defaults.headers.common['Content-Type'] = 'application/json';
 
 
